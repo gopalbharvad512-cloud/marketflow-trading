@@ -1,44 +1,8 @@
-
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0b1220;
-  color:white;
-}
-header {
-  display:flex;
-  justify-content:space-between;
-  padding:20px;
-  background:#050914;
-}
-nav a {
-  color:#00ffcc;
-  margin:0 10px;
-  text-decoration:none;
-}
-.hero {
-  text-align:center;
-  padding:80px 20px;
-}
-.hero button {
-  padding:12px 25px;
-  background:#00ffcc;
-  border:none;
-  cursor:pointer;
-}
-.market {
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:40px;
-}
-.card {
-  background:#111936;
-  padding:30px;
-  border-radius:10px;
-}
-footer {
-  text-align:center;
-  padding:20px;
-  background:#050914;
-}
+body{margin:0;font-family:Arial;background:#020617;color:white}
+header{display:flex;justify-content:space-between;padding:20px;background:#050914}
+nav a{color:#00ffcc;margin:10px;text-decoration:none}
+.hero{text-align:center;padding:80px}
+.btn{background:#00ffcc;padding:12px 25px;color:black;text-decoration:none}
+.features{display:flex;justify-content:center;gap:20px;padding:40px}
+.card{background:#111936;padding:30px;border-radius:10px}
+footer{text-align:center;padding:20px;background:#050914}
