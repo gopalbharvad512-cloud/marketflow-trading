@@ -1,8 +1,4 @@
 function toggleMenu(){
-var nav = document.getElementById("navMenu");
-if(nav.style.display === "block"){
-nav.style.display = "none";
-}else{
-nav.style.display = "block";
-}
+var nav=document.getElementById("navMenu");
+nav.style.display = nav.style.display === "block" ? "none" : "block";
 }
