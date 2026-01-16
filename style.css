@@ -1,20 +1,19 @@
-body{
-background:#020617;
-color:white;
-font-family:Arial;
-margin:0;
-}
-.pair-selector{
-text-align:center;
-margin:20px;
-}
-select{
-padding:10px 15px;
-background:#050914;
-color:#00ffcc;
-border:1px solid #00ffcc;
-border-radius:5px;
-}
-.chart-box{
-padding:10px;
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial}
+body{background:#050b1e;color:#fff}
+.header{display:flex;justify-content:space-between;align-items:center;padding:15px;background:#000}
+.logo{font-weight:bold}
+nav{display:flex;gap:15px}
+nav a{color:#5fffd7;text-decoration:none}
+.menu-toggle{display:none;font-size:24px;cursor:pointer}
+
+.hero{padding:60px 20px;text-align:center}
+.hero button{padding:12px 25px;background:#5fffd7;border:none}
+
+.pairs{padding:30px;text-align:center}
+select{padding:10px}
+
+@media(max-width:768px){
+ nav{display:none;flex-direction:column;background:#000;width:100%}
+ nav.active{display:flex}
+ .menu-toggle{display:block}
 }

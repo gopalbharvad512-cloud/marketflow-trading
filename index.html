@@ -5,14 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MarketFlow Live</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
 <body>
-
 <header class="header">
   <div class="logo">MarketFlow Live</div>
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
-  <nav id="navMenu">
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav id="nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -22,18 +20,21 @@
 </header>
 
 <section class="hero">
-  <h1>Trade Smarter with MarketFlow Live</h1>
-  <p>Bitcoin & Forex Trading Platform</p>
-  <a class="btn" href="market.html">View Live Market</a>
+  <h1>Bitcoin & Forex Trading Platform</h1>
+  <button>View Live Market</button>
 </section>
 
-<section class="features">
-  <div class="card">Live Bitcoin & Forex</div>
-  <div class="card">Professional Charts</div>
-  <div class="card">Secure Platform</div>
+<section class="pairs">
+  <h2>Select Trading Pair</h2>
+  <select>
+    <option>BTC/USD</option>
+    <option>ETH/USD</option>
+    <option>EUR/USD</option>
+    <option>GBP/USD</option>
+    <option>XAU/USD</option>
+  </select>
 </section>
 
-<footer>© 2026 MarketFlow Live</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
