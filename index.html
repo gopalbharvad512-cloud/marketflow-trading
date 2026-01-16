@@ -1,7 +1,36 @@
 <!DOCTYPE html>
-<html><head><title>MarketFlow Live</title>
-<link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarketFlow Live</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
 <body>
-<h1>Welcome to MarketFlow Live</h1>
-<a href="market.html">Go to Market</a>
-</body></html>
+
+<div id="loader">
+  <div class="spinner"></div>
+  <p>Loading MarketFlow Live...</p>
+</div>
+
+<header class="header">
+  <div class="logo">MarketFlow Live</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero fade-in">
+  <h1>Trade Smarter with MarketFlow Live</h1>
+  <p>Bitcoin & Forex Trading Platform</p>
+  <a href="market.html" class="btn">View Live Market</a>
+</section>
+
+<footer>© 2026 MarketFlow Live</footer>
+
+</body>
+</html>

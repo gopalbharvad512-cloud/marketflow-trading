@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Market</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market | MarketFlow Live</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
-<div id="loader"><div class="spinner"></div></div>
-
-<h1 style="color:white;padding:15px">Live Market</h1>
-
-<div class="tv-box">
-<iframe src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=15&theme=dark"
-width="100%" height="400"></iframe>
+<div id="loader">
+  <div class="spinner"></div>
 </div>
 
-<div class="tv-box">
-<iframe src="https://s.tradingview.com/widgetembed/?symbol=FX:EURUSD&interval=15&theme=dark"
-width="100%" height="400"></iframe>
+<h2 style="padding:15px;">Live Market</h2>
+
+<div class="pair-selector">
+<select id="pairSelect" onchange="changePair()">
+<option value="BINANCE:BTCUSDT">BTC / USDT</option>
+<option value="BINANCE:ETHUSDT">ETH / USDT</option>
+<option value="FX:EURUSD">EUR / USD</option>
+<option value="FX:GBPUSD">GBP / USD</option>
+<option value="FX:XAUUSD">GOLD (XAU/USD)</option>
+</select>
 </div>
 
-<script src="script.js"></script>
-</body></html>
+<div class="chart-box">
+<iframe id="chartFrame"
+src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark&interval=15"
+loading="lazy"></iframe>
+</div>
+
+</body>
+</html>
