@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MarketFlow Live</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
+
 <header class="header">
   <div class="logo">MarketFlow Live</div>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <nav id="nav">
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav id="navMenu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -20,21 +21,9 @@
 </header>
 
 <section class="hero">
-  <h1>Bitcoin & Forex Trading Platform</h1>
-  <button>View Live Market</button>
+<h2>Trade Smarter with MarketFlow Live</h2>
+<p>Bitcoin & Forex Trading Platform</p>
 </section>
 
-<section class="pairs">
-  <h2>Select Trading Pair</h2>
-  <select>
-    <option>BTC/USD</option>
-    <option>ETH/USD</option>
-    <option>EUR/USD</option>
-    <option>GBP/USD</option>
-    <option>XAU/USD</option>
-  </select>
-</section>
-
-<script src="script.js"></script>
 </body>
 </html>
