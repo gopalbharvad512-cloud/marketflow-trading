@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market | MarketFlow Live</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
 <body>
-<h2>Live Market</h2>
-<iframe src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark" width="100%" height="400"></iframe>
-<iframe src="https://s.tradingview.com/widgetembed/?symbol=FX:EURUSD&theme=dark" width="100%" height="400"></iframe>
-</body></html>
+
+<h2 style="text-align:center;">Live Market – Multiple Pairs</h2>
+
+<div class="pair-selector">
+  <select id="pairSelect" onchange="changePair()">
+    <option value="BINANCE:BTCUSDT">Bitcoin (BTC/USDT)</option>
+    <option value="BINANCE:ETHUSDT">Ethereum (ETH/USDT)</option>
+    <option value="FX:EURUSD">EUR / USD</option>
+    <option value="FX:GBPUSD">GBP / USD</option>
+    <option value="FX:XAUUSD">Gold (XAU/USD)</option>
+  </select>
+</div>
+
+<div class="chart-box">
+  <iframe id="chartFrame"
+    src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark"
+    width="100%" height="450" frameborder="0">
+  </iframe>
+</div>
+
+</body>
+</html>

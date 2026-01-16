@@ -1,16 +1,20 @@
-body{margin:0;font-family:Arial;background:#020617;color:white}
-.header{display:flex;justify-content:space-between;align-items:center;padding:15px;background:#050914}
-.logo{font-size:20px;font-weight:bold}
-.menu-icon{font-size:26px;cursor:pointer;display:none}
-nav a{color:#00ffcc;margin:10px;text-decoration:none}
-.hero{text-align:center;padding:80px}
-.btn{background:#00ffcc;padding:12px 25px;color:black;text-decoration:none}
-.features{display:flex;justify-content:center;gap:20px;padding:40px;flex-wrap:wrap}
-.card{background:#111936;padding:30px;border-radius:10px}
-footer{text-align:center;padding:20px;background:#050914}
-
-@media(max-width:768px){
-nav{display:none;position:absolute;top:60px;left:0;width:100%;background:#050914;text-align:center}
-nav a{display:block;padding:15px;border-top:1px solid #111}
-.menu-icon{display:block}
+body{
+background:#020617;
+color:white;
+font-family:Arial;
+margin:0;
+}
+.pair-selector{
+text-align:center;
+margin:20px;
+}
+select{
+padding:10px 15px;
+background:#050914;
+color:#00ffcc;
+border:1px solid #00ffcc;
+border-radius:5px;
+}
+.chart-box{
+padding:10px;
 }
