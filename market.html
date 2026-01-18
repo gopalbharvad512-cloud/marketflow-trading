@@ -3,24 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market</title>
+<title>Market | Market Flow Live</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
 <body>
-<div id="loader"><div class="spinner"></div></div>
-<h2 style="padding:15px">Live Market</h2>
+
+<h2 style="padding:15px;">Live Market (Crypto + Forex)</h2>
+
 <div class="pair-selector">
 <select id="pairSelect" onchange="changePair()">
 <option value="BINANCE:BTCUSDT">BTC / USDT</option>
 <option value="BINANCE:ETHUSDT">ETH / USDT</option>
 <option value="FX:EURUSD">EUR / USD</option>
 <option value="FX:GBPUSD">GBP / USD</option>
-<option value="FX:XAUUSD">Gold (XAU/USD)</option>
 </select>
 </div>
+
 <div class="chart-box">
-<iframe id="chartFrame" src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark&interval=15"></iframe>
+<iframe id="chartFrame"
+src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark&interval=15"
+loading="lazy"></iframe>
 </div>
+
 </body>
 </html>
