@@ -1,4 +1,1 @@
-// smooth scroll safe
-document.querySelectorAll('a').forEach(link=>{
-  link.addEventListener('click',()=>{});
-});
+console.log('Market Flow Live loaded');
