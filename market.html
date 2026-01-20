@@ -3,23 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market</title>
+<title>Market | Market Flow Live</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
+
 <header class="navbar">
   <div class="logo">Market Flow Live</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="market.html">Market</a>
+    <a href="market.html" class="active">Market</a>
     <a href="signals.html">Signals</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<h2 class="page-title">Live Market</h2>
-<div class="chart-box">
-<iframe src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=15"></iframe>
-</div>
+<main class="market-page">
+  <div class="top-bar">
+    <select id="pairSelect" onchange="changePair()">
+      <option value="BINANCE:BTCUSDT">BTC / USDT</option>
+      <option value="BINANCE:ETHUSDT">ETH / USDT</option>
+      <option value="FX:EURUSD">EUR / USD</option>
+      <option value="FX:GBPUSD">GBP / USD</option>
+      <option value="FX:XAUUSD">GOLD (XAUUSD)</option>
+    </select>
+
+    <div class="timeframes">
+      <button onclick="changeTF('1')">1m</button>
+      <button onclick="changeTF('5')">5m</button>
+      <button onclick="changeTF('15')" class="active">15m</button>
+      <button onclick="changeTF('60')">1h</button>
+      <button onclick="changeTF('240')">4h</button>
+    </div>
+  </div>
+
+  <div class="chart-wrapper">
+    <iframe id="tvChart"
+      src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=15&theme=dark"
+      frameborder="0">
+    </iframe>
+  </div>
+
+  <div class="trade-panel">
+    <div class="price">Price: <span id="price">Live</span></div>
+    <input type="number" placeholder="Lot Size" />
+    <button class="buy">BUY</button>
+    <button class="sell">SELL</button>
+  </div>
+</main>
+
 </body>
 </html>
